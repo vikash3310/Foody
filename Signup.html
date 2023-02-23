@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@100&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            body
+            {
+                background-color: black;
+                margin: 0%;
+                padding: 0%;
+                height: 700px;
+                color:white;
+                /* background-repeat: no-repeat; */
+            }
+            header::before
+            {
+                /* background-image: url(https://source.unsplash.com/collection/928423/480x480) ; */
+               background: url(bur.jpg) no-repeat center center/cover ;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height:100%;
+                z-index: -1;
+                opacity: 0.4; 
+            }
+nav{
+    color: white;
+    /* height: 35px; */
+
+    display: flex;
+}
+li
+{
+    list-style-type: none;
+    padding: 6px;
+    margin: 9px;
+}
+li:hover
+{
+    border: solid white 1px;
+    border-radius: 6px;
+}
+section
+{
+    padding: 70px;
+    padding-top: 40px;
+    margin: 63px;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border: 5px double rgb(255, 255, 255);
+    font-family: Labrada ;
+}
+
+h1{
+    font-size: 3rem;
+    text-shadow:3px 3px rgb(239, 253, 175);
+}
+li{
+    text-shadow:1px 1.5px green;
+
+}
+button{
+    border:5px double rgb(255, 194, 154);
+    border-radius: 10px;
+}
+button:hover
+{
+    background-color:  rgb(235, 163, 114);
+    
+}
+#left
+{
+    border: 5px double white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width:20vw;
+    align-items: center;
+    font-family: Labrada ;
+    margin: 1vw 4vw 1vw 4vw;
+    
+}
+#down{
+    display:flex;
+    justify-content: center;
+}
+#mid
+{
+    background: url(del.png);
+    color:white;
+}
+   </style>
+</head>
+<body>
+    <header>
+        <nav id="container">
+ <li >Home
+<li >Menu
+<li >Services
+<li >About us
+<li >Contact info
+</nav>
+</header>
+<section>
+  <h1>SIGNUP</h1>
+  
+  Username:<input type="text" name="username">
+  Password: <input type="password" name="password">
+  Retype-Password: <input type="password" name="password"><br>
+  <input type="submit" name="submit"value=Signup> 
+</section>
+    <hr>
+<div id="down">
+
+    <div id="left">
+        <h2> Exixting user ?</h2> 
+        <button><b><a href="Login.html">Login</a></b></button>
+        
+    </div>
+    <div id="left" class="mid">
+       <button> <img src="Preview.jpg" width="100px" height="100px" border="4px"></button>
+        
+    </div>
+    <div id="left" class="mid">
+       <b>Contact us:</b><br>
+       
+        <b>Phone no:+92146-12341<br>
+           Punjab,Jalandhar<br>
+           Phagwara</b>
+        
+    </div>
+</div>
+
+
+</body>
+</html>
